@@ -1,0 +1,18 @@
+.studashh1 {
+    text-align: center;
+    line-height: 40px;
+    background-color: orange;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.StudashNav {
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.studashnavleft {
+    width: 200px;
+    background-color: aqua;
+    height: 300px;
+}

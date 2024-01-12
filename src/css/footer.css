@@ -1,0 +1,8 @@
+.footer {
+    height: 80px;
+    width: 100vw;
+    /* background-color: crimson; */
+    background-color: rgb(111, 111, 221);
+    justify-content: center;
+    align-items: center;
+}

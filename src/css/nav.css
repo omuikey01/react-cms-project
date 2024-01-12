@@ -1,0 +1,18 @@
+.nav_component {
+    width: 100vw;
+    /* background-color: rgb(173, 205, 233); */
+    /* background-color: rgb(8, 117, 212); */
+    background-color: aquamarine;
+
+}
+
+nav {
+    margin: auto;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav_content {
+    justify-content: space-around;
+    align-items: center;
+}

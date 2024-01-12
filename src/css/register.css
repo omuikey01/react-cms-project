@@ -1,0 +1,45 @@
+._form {
+    width: 700px;
+    margin: auto;
+}
+.regibtnmt {
+    margin: 20px 0;
+}
+.regibtn {
+    width: 250px;
+    margin-left: 32%;   
+}
+
+.login_link {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 600px) {
+    ._form {
+        width: 80%;
+    }
+    .regibtn {
+        width: fit-content;
+        margin-left: 20%;
+    }
+}

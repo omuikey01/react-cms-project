@@ -1,0 +1,12 @@
+.login{
+    margin: 30px 0;
+    justify-content: space-evenly;
+}
+
+/* .login form {
+    width: 700px;
+    margin: auto;
+} */
+.login button {
+    width: 200px;
+}

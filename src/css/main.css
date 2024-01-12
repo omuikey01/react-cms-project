@@ -1,0 +1,47 @@
+.mainpage {
+    min-height: 450px;
+}
+
+.CompTitle {
+    /* background-color : rgba(247, 224, 239, 0.9); */
+    color: #000;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1%;
+    text-align: center;
+    transition: all 1s;
+}
+
+.CompTitle:hover {
+    background-color: #000;
+    color: #fff;
+    transition: all 1s;
+}
+
+.mainpageboxes {
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.logininmainpage {
+    width: 500px;
+}
+
+.mainBoxImages {
+    max-width: 40%;
+    min-height: 70vh;
+}
+
+.mainBoxImages img {
+    margin-top: 20px;
+}
+
+.mainBoxImages button {
+    width: 95%;
+    margin: 20px 10px;
+    height: 10%;
+}

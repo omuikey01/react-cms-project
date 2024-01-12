@@ -1,0 +1,83 @@
+{
+  "Register": [
+    {
+      "id": 1,
+      "fullname": "",
+      "city": "",
+      "contact": "",
+      "dropdown": "",
+      "gender": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": 2,
+      "fullname": "Manoj Mishra",
+      "city": "Indore",
+      "contact": "1344234",
+      "dropdown": "teacher",
+      "gender": "male",
+      "email": "manoj@gmail.com",
+      "password": "44"
+    },
+    {
+      "fullname": "dheeraj yadav",
+      "city": "Bhopal",
+      "contact": "987667576",
+      "gender": "male",
+      "email": "dheeraj@gmail.com",
+      "password": "dee",
+      "id": 3
+    },
+    {
+      "fullname": "ahana awasthi",
+      "city": "Indore",
+      "contact": "8957687677",
+      "dropdown": "student",
+      "gender": "female",
+      "email": "ahana@gmail.com",
+      "password": "al",
+      "id": 4
+    },
+    {
+      "fullname": "Shubham Sharma",
+      "city": "Mishrod",
+      "contact": "78666458",
+      "dropdown": "student",
+      "gender": "male",
+      "email": "shubham@gmail.com",
+      "password": "000000",
+      "id": 5
+    },
+    {
+      "fullname": "Ashok Tekam",
+      "city": "Ujjain",
+      "contact": "7678776656",
+      "dropdown": "student",
+      "gender": "male",
+      "email": "ashoka@gmail.com",
+      "password": "888",
+      "id": 6
+    },
+    {
+      "fullname": "Manohar Mishra",
+      "city": "Hydrabad",
+      "contact": "898787667",
+      "dropdown": "student",
+      "gender": "male",
+      "email": "manohar@gmail.com",
+      "password": "1111",
+      "id": 10
+    },
+    {
+      "fullname": "Ankush Paswan",
+      "city": "Bhopal",
+      "contact": "8766546523",
+      "dropdown": "teacher",
+      "gender": "male",
+      "email": "ankush@gmail.com",
+      "password": "ankush",
+      "id": 11
+    }
+  ]
+}

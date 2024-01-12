@@ -1,0 +1,28 @@
+.headingcompaint {
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 500ms;
+    padding: 1%;
+}
+
+.headingcompaint:hover {
+    background-color: #fff;
+    color: #000;
+    transition: ease-in-out 500ms;
+}
+
+.H1Heading {
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+}
+.login .loginBox2 h1 {
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0;
+    font-family : 'Arial Narrow', Arial, sans-serif;
+}
