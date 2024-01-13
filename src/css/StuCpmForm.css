@@ -1,0 +1,22 @@
+.StuCpmForm {
+    width: 500px;
+    margin: auto;
+}
+.StuCpmForm h1{
+    text-align: center;
+    font-size: 20px;
+}
+.StuCpmForm label{
+    display: inline-block;
+    width: 150px;
+}
+.StuCpmForm input, textarea{
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    padding: 5px 10px;
+}
+.StuCpmForm textarea{
+    height: 100px;
+    padding: 10px;
+}

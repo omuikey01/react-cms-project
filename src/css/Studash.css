@@ -6,13 +6,24 @@
     padding: 10px;
 }
 
-.StudashNav {
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
 .studashnavleft {
     width: 200px;
     background-color: aqua;
     height: 300px;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.useenameheading {
+    text-align: end;
+    font-size: 20px;
+}
+.username {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+.studashnavleft ul li {
+    color: blue;
+    cursor: pointer;
+    font-size: 22px;
 }

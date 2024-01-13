@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 let initialState = {
     stuName : "",
+    stuId : "",
     stuAuth : false
 }
 
@@ -11,11 +12,13 @@ let StudentAccountSlice = createSlice({
     reducers : 
     {
         Login : (state, {payload})=>{
-            state.stuName = payload
+            state.stuName = payload.name
+            state.stuId = payload.idd
             state.stuAuth = true
         },
         Logout : (state)=>{
             state.stuName = ""
+            state.stuId = ""
             state.stuAuth = false
         }
 

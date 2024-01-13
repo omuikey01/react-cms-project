@@ -11,73 +11,66 @@
       "password": ""
     },
     {
-      "id": 2,
-      "fullname": "Manoj Mishra",
-      "city": "Indore",
-      "contact": "1344234",
-      "dropdown": "teacher",
+      "fullname": "Rahul Negi",
+      "city": "Bhopal",
+      "contact": "8376700986",
+      "dropdown": "student",
       "gender": "male",
-      "email": "manoj@gmail.com",
-      "password": "44"
+      "email": "rahul@gmail.com",
+      "password": "rahul",
+      "id": 2
     },
     {
-      "fullname": "dheeraj yadav",
-      "city": "Bhopal",
-      "contact": "987667576",
+      "fullname": "Ghanshayam Sharma",
+      "city": "Mandideep",
+      "contact": "8776687663",
+      "dropdown": "student",
       "gender": "male",
-      "email": "dheeraj@gmail.com",
-      "password": "dee",
+      "email": "sharma@gmail.com",
+      "password": "sharma",
+      "id": 3
+    }
+  ],
+  "Complaints": [
+    {
+      "id": 1,
+      "stuid": 44,
+      "subject": "",
+      "queryexplain": "",
+      "datetime": "",
+      "ans": ""
+    },
+    {
+      "stuid": 5,
+      "subject": "Internet",
+      "datetime": "13 6 2024 8:22",
+      "queryexplain": "In 4th floor Internet is not working",
+      "ans": "",
+      "id": 2
+    },
+    {
+      "stuid": 3,
+      "subject": "Chair",
+      "datetime": "13 6 2024 8:37",
+      "queryexplain": "Chair Problem",
+      "ans": "",
       "id": 3
     },
     {
-      "fullname": "ahana awasthi",
-      "city": "Indore",
-      "contact": "8957687677",
-      "dropdown": "student",
-      "gender": "female",
-      "email": "ahana@gmail.com",
-      "password": "al",
+      "stuid": 3,
+      "subject": "Light",
+      "datetime": "13 6 2024 8:39",
+      "queryexplain": "Light problem ",
+      "ans": "",
       "id": 4
     },
     {
-      "fullname": "Shubham Sharma",
-      "city": "Mishrod",
-      "contact": "78666458",
-      "dropdown": "student",
-      "gender": "male",
-      "email": "shubham@gmail.com",
-      "password": "000000",
+      "stuid": 2,
+      "subject": "Wish",
+      "datetime": "13 6 2024 8:40",
+      "queryexplain": "Thank You so Much",
+      "ans": "",
       "id": 5
-    },
-    {
-      "fullname": "Ashok Tekam",
-      "city": "Ujjain",
-      "contact": "7678776656",
-      "dropdown": "student",
-      "gender": "male",
-      "email": "ashoka@gmail.com",
-      "password": "888",
-      "id": 6
-    },
-    {
-      "fullname": "Manohar Mishra",
-      "city": "Hydrabad",
-      "contact": "898787667",
-      "dropdown": "student",
-      "gender": "male",
-      "email": "manohar@gmail.com",
-      "password": "1111",
-      "id": 10
-    },
-    {
-      "fullname": "Ankush Paswan",
-      "city": "Bhopal",
-      "contact": "8766546523",
-      "dropdown": "teacher",
-      "gender": "male",
-      "email": "ankush@gmail.com",
-      "password": "ankush",
-      "id": 11
     }
   ]
 }

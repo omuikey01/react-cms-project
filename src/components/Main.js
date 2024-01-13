@@ -3,7 +3,7 @@ import Img1 from '../images/Complaints.jpg'
 import axios from 'axios'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { Login, Logout } from '../StudentAccountSlice'
+import { Login } from '../StudentAccountSlice'
 
 let Main = () => {
     let [loginData, setLoginData] = useState({})
@@ -18,15 +18,20 @@ let Main = () => {
     }
 
     let Logindatasubmit = (e) => {
-
+        let info = {}
         e.preventDefault()
         let url = `http://localhost:4000/Register?email=${loginData.loginid}`
         axios.get(url).then((res) => {
             console.log(res.data);
             if (res.data.length === 1) {
                 if (res.data[0].password === loginData.loginpass) {
-                    // alert("Password Match")
-                    myDispatch(Login(res.data[0].fullname))
+                    // myDispatch(Login(res.data[0].fullname, res.data[0].id))
+                    myDispatch(Login(
+                        info = {
+                            "name": res.data[0].fullname,
+                            "idd": res.data[0].id
+                        }
+                    ))
                     myNav("/studash")
                 }
                 else {
