@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import StuDashboard from './components/StuDashboard';
 
 function LoaderExample() {
-
+ 
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

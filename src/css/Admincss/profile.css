@@ -3,7 +3,7 @@
     margin: auto;
     background-color: pink;
 }
-.adminNav ul {
+.adminNav ul { 
     display: flex;
     align-items: center;
     justify-content: center;
