@@ -8,7 +8,7 @@ function LoaderExample() {
   useEffect(() => {
     const delayToShowContent = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 2000); 
 
     // Clear the timeout to avoid memory leaks
     return () => clearTimeout(delayToShowContent);

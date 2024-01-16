@@ -12,7 +12,8 @@ import './css/login.css'
 import './css/Studash.css'
 import './css/loader.css'
 import './css/StuCpmForm.css'
-
+import './css/Admincss/profile.css'
+import './css/Admincss/style.css'
 
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';

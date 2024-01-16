@@ -9,14 +9,14 @@ let StuCompalint = () => {
     let [userSub, setUserSub] = useState("")
     let [userCpm, setUserCpm] = useState("")
     let date = new Date()
-    let stuId = useSelector(state => state.stuId)
+    let stuId = useSelector(state => state.Student.stuId)
     let myNav = useNavigate()
 
 
 
     let submitDandle = (e) => {
         e.preventDefault()
-        let currentData = date.getDate() + " " + date.getDay() + " " + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes()
+        let currentData = date.getDate() + " " + date.getMonth()+1 + " " + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes()
         let url = ' http://localhost:4000/Complaints';
         axios.post(url, { "stuid": stuId, "subject": userSub, "datetime": currentData, "queryexplain": userCpm, "ans": "" }).then((res)=>{
             myNav("/studash")

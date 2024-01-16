@@ -1,0 +1,11 @@
+.adminNav{
+    width: 100%;
+    margin: auto;
+    background-color: pink;
+}
+.adminNav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}

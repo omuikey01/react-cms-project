@@ -2,18 +2,22 @@ import { configureStore } from "@reduxjs/toolkit";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import StudentReducer from './StudentAccountSlice'
-
+import AdminReducer from './components/Admin/AdminSlice'
 
 let persistConfig = {
     key: "root",
     storage,
 }
-let persistedReducer = persistReducer(persistConfig, StudentReducer)
-
+let StudentpersistedReducer = persistReducer(persistConfig, StudentReducer)
+let adminpersistedReducer = persistReducer(persistConfig, AdminReducer)
 
 
 export let store = configureStore({
-    reducer: persistedReducer
+    reducer:
+    {
+        "Student" : StudentpersistedReducer,
+        "Admin" : adminpersistedReducer
+    } 
     // StudentAccountManage : StudentReducer
 })
 // export default store

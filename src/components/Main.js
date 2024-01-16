@@ -4,6 +4,7 @@ import axios from 'axios'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { Login } from '../StudentAccountSlice'
+import { adminLogin } from './Admin/AdminSlice'
 
 let Main = () => {
     let [loginData, setLoginData] = useState({})
@@ -14,38 +15,46 @@ let Main = () => {
         let name = e.target.name
         let value = e.target.value
         setLoginData({ ...loginData, [name]: value })
-        console.log(loginData)
+        // console.log(loginData)
     }
 
     let Logindatasubmit = (e) => {
-        let info = {}
-        e.preventDefault()
-        let url = `http://localhost:4000/Register?email=${loginData.loginid}`
-        axios.get(url).then((res) => {
-            console.log(res.data);
-            if (res.data.length === 1) {
-                if (res.data[0].password === loginData.loginpass) {
-                    // myDispatch(Login(res.data[0].fullname, res.data[0].id))
-                    myDispatch(Login(
+        if (loginData.dropdown === "admin") {
+            e.preventDefault()
+            let url = `http://localhost:4000/adminuser?email=${loginData.loginid}`;
+            axios.get(url).then((res) => {
+                let name = res.data[0].name;
+                myDispatch(adminLogin(name))
+                myNav("/admindash")
+            })
+
+        }
+        else {
+            let info = {}
+
+            e.preventDefault()
+            let url = `http://localhost:4000/Register?email=${loginData.loginid}`
+            axios.get(url).then((res) => {
+                if (res.data.length === 1) {
+                    if (res.data[0].password === loginData.loginpass) {
                         info = {
                             "name": res.data[0].fullname,
                             "idd": res.data[0].id
                         }
-                    ))
-                    myNav("/studash")
+                        myDispatch(Login(info))
+                        myNav("/studash")
+                    }
+                    else {
+                        alert("Password not match")
+                    }
                 }
                 else {
-                    alert("Password not match")
+                    alert("Email Not Match ")
+
                 }
-            }
-            else {
-                alert("Email Not Match ")
-
-            }
-        })
-
+            })
+        }
     }
-
     return (
         <>
             <section>
@@ -61,11 +70,12 @@ let Main = () => {
                             <label> Password </label>
                             <input type="password" name='loginpass' value={loginData.loginpass} onChange={datamanage} />
                             <label> Account As </label>
+
                             <select name='dropdown' onChange={datamanage} >
-                                <option value='no select' > Select any one  </option>
+                                <option value="student"> Student  </option>
                                 <option value="admin" > Admin  </option>
-                                <option value="student" > Student  </option>
                             </select>
+
                             <button onClick={Logindatasubmit} > Login Now </button>
                         </form>
                     </div>

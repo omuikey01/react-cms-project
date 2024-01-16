@@ -11,66 +11,118 @@
       "password": ""
     },
     {
+      "fullname": "Demo user",
+      "city": "Bhopal",
+      "contact": "8766656",
+      "dropdown": "student",
+      "gender": "male",
+      "email": "demo@gmail.com",
+      "password": "demo",
+      "id": 2
+    },
+    {
       "fullname": "Rahul Negi",
       "city": "Bhopal",
-      "contact": "8376700986",
+      "contact": "896678788",
       "dropdown": "student",
       "gender": "male",
       "email": "rahul@gmail.com",
       "password": "rahul",
-      "id": 2
+      "id": 3
     },
     {
-      "fullname": "Ghanshayam Sharma",
+      "fullname": "Suresh Ghupta",
       "city": "Mandideep",
-      "contact": "8776687663",
+      "contact": "9845990098",
       "dropdown": "student",
       "gender": "male",
-      "email": "sharma@gmail.com",
-      "password": "sharma",
-      "id": 3
+      "email": "suresh@gmail.com",
+      "password": "suresh",
+      "id": 4
+    },
+    {
+      "fullname": "Manoj Ahake",
+      "city": "Hydrabad",
+      "contact": "888898765",
+      "dropdown": "student",
+      "gender": "male",
+      "email": "manoj@gmail.com",
+      "password": "manoj",
+      "id": 5
     }
   ],
   "Complaints": [
     {
       "id": 1,
-      "stuid": 44,
+      "stuid": 90,
       "subject": "",
       "queryexplain": "",
       "datetime": "",
       "ans": ""
     },
     {
-      "stuid": 5,
-      "subject": "Internet",
-      "datetime": "13 6 2024 8:22",
-      "queryexplain": "In 4th floor Internet is not working",
+      "stuid": 3,
+      "subject": "Laptop",
+      "datetime": "16 01 2024 0:35",
+      "queryexplain": "Laptop.....",
       "ans": "",
       "id": 2
     },
     {
       "stuid": 3,
-      "subject": "Chair",
-      "datetime": "13 6 2024 8:37",
-      "queryexplain": "Chair Problem",
+      "subject": "Light",
+      "datetime": "16 01 2024 7:58",
+      "queryexplain": "Light.............",
       "ans": "",
       "id": 3
     },
     {
       "stuid": 3,
-      "subject": "Light",
-      "datetime": "13 6 2024 8:39",
-      "queryexplain": "Light problem ",
+      "subject": "A Cup of Tea",
+      "datetime": "16 01 2024 7:58",
+      "queryexplain": "Tea Issue...............",
       "ans": "",
       "id": 4
     },
     {
       "stuid": 2,
-      "subject": "Wish",
-      "datetime": "13 6 2024 8:40",
-      "queryexplain": "Thank You so Much",
+      "subject": "demo user",
+      "datetime": "16 01 2024 7:59",
+      "queryexplain": "I am demo user ......................",
       "ans": "",
       "id": 5
+    },
+    {
+      "stuid": 4,
+      "subject": "Hyy",
+      "datetime": "16 01 2024 8:0",
+      "queryexplain": "Heyy i want new Heyy.................",
+      "ans": "",
+      "id": 6
+    },
+    {
+      "stuid": 4,
+      "subject": "Phone",
+      "datetime": "16 01 2024 8:0",
+      "queryexplain": "I lost my cover of Phone ",
+      "ans": "",
+      "id": 7
+    },
+    {
+      "stuid": 5,
+      "subject": "Water",
+      "datetime": "16 01 2024 8:24",
+      "queryexplain": "There is no Water comming..............",
+      "ans": "",
+      "id": 8
+    }
+  ],
+  "adminuser": [
+    {
+      "id": 1,
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin"
     }
   ]
 }

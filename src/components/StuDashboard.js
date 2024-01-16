@@ -4,7 +4,7 @@ import { Link, Outlet, useNavigate } from "react-router-dom"
 
 
 let StuDashboard = () => {
-    let userName = useSelector(state => state.stuName)
+    let userName = useSelector(state => state.Student.stuName)
     let myDispatch = useDispatch()
     let MyNav = useNavigate()
     let logoutFun = () => {
@@ -22,9 +22,9 @@ let StuDashboard = () => {
                     <div className="StudashNav flex">
                         <div className="studashnavleft">
                             <ul>
+                                <Link to="stuprofile"> <li> Profile </li> </Link>
                                 <Link to="camplaint"> <li> Compalaint </li> </Link>
                                 <Link to="laststucpm"> <li> Last Compalaint </li> </Link>
-                                <Link to="stuprofile"> <li> Profile </li> </Link>
                             </ul>
                         </div>
                         <div>

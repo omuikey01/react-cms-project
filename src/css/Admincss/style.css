@@ -1,0 +1,26 @@
+.showlQueryes {
+    width: 90vw;
+    margin: 30px auto;
+}
+
+.showlQueryes h1 {
+    color: blue;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.showlQueryes table {
+    width: 800px;
+    text-align: center;
+}
+
+.showlQueryes table td {
+    padding: 5px;
+}
+ 
+.replyClass {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 18px;
+}

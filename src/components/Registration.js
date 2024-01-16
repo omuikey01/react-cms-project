@@ -11,7 +11,6 @@ let Registration = () => {
         let name = e.target.name
         let value = e.target.value
         setRegidata({ ...regidata, [name]: value })
-        console.log(regidata);
     }
 
 

@@ -2,11 +2,15 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Main from "./Main"
 import Layout from "../Layout"
 import Registration from "./Registration"
-// import StuDashboard from "./StuDashboard"
 import LoaderExample from "../LoaderPage"
 import StuCompalint from "./InsideComponent/StuCompalint"
 import LastStuComplaint from "./InsideComponent/LastStuCompalint"
 import StuProfile from "./InsideComponent/StuProfile"
+import AdminDashboard from "./Admin/AdminDashboard"
+import AdminProfile from "./Admin/AdminProfile"
+import AllQuery from "./Admin/AllQuery"
+import SolvedQuery from "./Admin/SolvedQuery"
+
 
 
 let Home = () => {
@@ -20,9 +24,16 @@ let Home = () => {
                         <Route path="register" element={<Registration />} />
                         <Route path="login" element={<Main />} />
                         <Route path="studash" element={<LoaderExample />} >
-                            <Route path="camplaint"  element={<StuCompalint />} />
+                            <Route index element={<StuProfile />} />
+                            <Route path="camplaint" element={<StuCompalint />} />
                             <Route path="laststucpm" element={<LastStuComplaint />} />
                             <Route path="stuprofile" element={<StuProfile />} />
+                        </Route>
+                        <Route path="admindash" element={<AdminDashboard />} >
+                            <Route index element={<AdminProfile />} />
+                            <Route path="adminprofile" element={<AdminProfile />} />
+                            <Route path="allquery" element={<AllQuery />} />
+                            <Route path="solvedquery" element={<SolvedQuery />} />
                         </Route>
                     </Route>
                 </Routes>
