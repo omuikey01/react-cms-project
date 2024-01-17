@@ -70,14 +70,6 @@
     },
     {
       "stuid": 3,
-      "subject": "Light",
-      "datetime": "16 01 2024 7:58",
-      "queryexplain": "Light.............",
-      "ans": "",
-      "id": 3
-    },
-    {
-      "stuid": 3,
       "subject": "A Cup of Tea",
       "datetime": "16 01 2024 7:58",
       "queryexplain": "Tea Issue...............",
@@ -93,11 +85,12 @@
       "id": 5
     },
     {
-      "stuid": 4,
       "subject": "Hyy",
       "datetime": "16 01 2024 8:0",
       "queryexplain": "Heyy i want new Heyy.................",
-      "ans": "",
+      "ans": "What you want tell me!!!",
+      "replydata": "16 01 2024 21:4",
+      "stuid": 4,
       "id": 6
     },
     {

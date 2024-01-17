@@ -10,6 +10,7 @@ import AdminDashboard from "./Admin/AdminDashboard"
 import AdminProfile from "./Admin/AdminProfile"
 import AllQuery from "./Admin/AllQuery"
 import SolvedQuery from "./Admin/SolvedQuery"
+import ReplayCmp from "./Admin/ReplayCmp"
 
 
 
@@ -34,6 +35,7 @@ let Home = () => {
                             <Route path="adminprofile" element={<AdminProfile />} />
                             <Route path="allquery" element={<AllQuery />} />
                             <Route path="solvedquery" element={<SolvedQuery />} />
+                            <Route path="adminreply/:id" element={<ReplayCmp />} />
                         </Route>
                     </Route>
                 </Routes>

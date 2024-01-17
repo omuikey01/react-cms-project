@@ -1,9 +1,18 @@
 
 
-let LastStuComplaint =()=>{
-    return(
+let LastStuComplaint = () => {
+    return (
         <>
-            <h1> Last Student Compalint </h1>
+            <div>
+                <h1> Last Compalints </h1>
+                <button> Pending </button> 
+                <button> Resorved </button> 
+                <button> Check </button> 
+
+              
+                
+            </div>
+
         </>
     )
 }

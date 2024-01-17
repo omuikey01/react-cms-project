@@ -15,7 +15,6 @@ let Main = () => {
         let name = e.target.name
         let value = e.target.value
         setLoginData({ ...loginData, [name]: value })
-        // console.log(loginData)
     }
 
     let Logindatasubmit = (e) => {

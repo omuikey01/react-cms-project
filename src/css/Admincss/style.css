@@ -14,8 +14,9 @@
     text-align: center;
 }
 
-.showlQueryes table td {
-    padding: 5px;
+.showlQueryes table td, th{
+    padding: 10px;
+
 }
  
 .replyClass {
