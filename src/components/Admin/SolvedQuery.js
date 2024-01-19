@@ -5,8 +5,6 @@ let SolvedQuery = () => {
     let [queryData, setQueryData] = useState([])
     let [Newdata, setNewData] = useState([])
 
-
-
     let loadData = () => {
         let url = `http://localhost:4000/Complaints`;
         axios.get(url).then((res) => {
@@ -30,7 +28,6 @@ let SolvedQuery = () => {
                     getdata = Newdata[i].fullname
                 }
             }
-            // const getdata = Newdata.find((Newdata) => key.stuid == Newdata.id);
             return (
                 <>
                     <tr>
@@ -43,7 +40,6 @@ let SolvedQuery = () => {
                 </>
             )
         }
-
     })
     return (
         <>
@@ -54,7 +50,7 @@ let SolvedQuery = () => {
                     <th> Subject </th>
                     <th> Description </th>
                     <th> Date of Post </th>
-                    <th> Reply from Admin </th>
+                    <th> Replyed </th>
                 </tr>
                 {ans}
             </table>

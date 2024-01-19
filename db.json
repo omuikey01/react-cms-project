@@ -11,103 +11,88 @@
       "password": ""
     },
     {
-      "fullname": "Demo user",
-      "city": "Bhopal",
-      "contact": "8766656",
+      "fullname": "Manoj Aahake",
+      "city": "Nagpur ",
+      "contact": "9325709273",
       "dropdown": "student",
-      "gender": "male",
-      "email": "demo@gmail.com",
-      "password": "demo",
+      "gender": "male ",
+      "email": "manoj@gmail.com",
+      "password": "manoj",
       "id": 2
     },
     {
-      "fullname": "Rahul Negi",
-      "city": "Bhopal",
-      "contact": "896678788",
-      "dropdown": "student",
-      "gender": "male",
-      "email": "rahul@gmail.com",
-      "password": "rahul",
+      "fullname": "Ankushb",
       "id": 3
     },
     {
-      "fullname": "Suresh Ghupta",
-      "city": "Mandideep",
-      "contact": "9845990098",
+      "fullname": "Akash Murkheh",
+      "city": "Bhopal",
+      "contact": "4545567444",
       "dropdown": "student",
       "gender": "male",
-      "email": "suresh@gmail.com",
-      "password": "suresh",
+      "email": "akash@gmail.com",
+      "password": "akash",
       "id": 4
-    },
-    {
-      "fullname": "Manoj Ahake",
-      "city": "Hydrabad",
-      "contact": "888898765",
-      "dropdown": "student",
-      "gender": "male",
-      "email": "manoj@gmail.com",
-      "password": "manoj",
-      "id": 5
     }
   ],
   "Complaints": [
     {
-      "id": 1,
-      "stuid": 90,
-      "subject": "",
-      "queryexplain": "",
-      "datetime": "",
-      "ans": ""
+      "subject": "Internet Issue",
+      "datetime": "17 01 2024 16:49",
+      "queryexplain": "In 4th floor form last four days internet is giving Issue",
+      "ans": "We are working on there",
+      "replydata": "17 01 2024 16:52",
+      "stuid": 2,
+      "id": 1
     },
     {
       "stuid": 3,
-      "subject": "Laptop",
-      "datetime": "16 01 2024 0:35",
-      "queryexplain": "Laptop.....",
+      "subject": "Light",
+      "datetime": "17 01 2024 17:15",
+      "queryexplain": "Light....",
       "ans": "",
       "id": 2
     },
     {
       "stuid": 3,
-      "subject": "A Cup of Tea",
-      "datetime": "16 01 2024 7:58",
-      "queryexplain": "Tea Issue...............",
+      "subject": "Bill",
+      "datetime": "17 01 2024 17:23",
+      "queryexplain": "Bill............",
+      "ans": "",
+      "id": 3
+    },
+    {
+      "stuid": 2,
+      "subject": "Lost Charger",
+      "datetime": "18 01 2024 21:20",
+      "queryexplain": "I lost my charger, in institute please let check and via CCTV. it's humble Request",
       "ans": "",
       "id": 4
     },
     {
       "stuid": 2,
-      "subject": "demo user",
-      "datetime": "16 01 2024 7:59",
-      "queryexplain": "I am demo user ......................",
+      "subject": "Pen",
+      "datetime": "18 01 2024 21:25",
+      "queryexplain": "Pen...........",
       "ans": "",
       "id": 5
     },
     {
-      "subject": "Hyy",
-      "datetime": "16 01 2024 8:0",
-      "queryexplain": "Heyy i want new Heyy.................",
-      "ans": "What you want tell me!!!",
-      "replydata": "16 01 2024 21:4",
-      "stuid": 4,
+      "stuid": 2,
+      "subject": "Copy",
+      "datetime": "18 01 2024 21:25",
+      "queryexplain": "Copy..........",
+      "ans": "",
       "id": 6
     },
     {
+      "subject": "Travel Issue",
+      "datetime": "19 01 2024 15:41",
+      "queryexplain": "There is Traval Issue",
+      "ans": "We will Resore",
+      "replydata": "19 01 2024 15:43",
       "stuid": 4,
-      "subject": "Phone",
-      "datetime": "16 01 2024 8:0",
-      "queryexplain": "I lost my cover of Phone ",
-      "ans": "",
       "id": 7
-    },
-    {
-      "stuid": 5,
-      "subject": "Water",
-      "datetime": "16 01 2024 8:24",
-      "queryexplain": "There is no Water comming..............",
-      "ans": "",
-      "id": 8
     }
   ],
   "adminuser": [

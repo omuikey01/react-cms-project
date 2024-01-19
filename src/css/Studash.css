@@ -6,6 +6,11 @@
     padding: 10px;
 }
 
+.StudashNav
+{
+    flex-wrap: nowrap;
+}
+
 .studashnavleft {
     width: 200px;
     background-color: aqua;

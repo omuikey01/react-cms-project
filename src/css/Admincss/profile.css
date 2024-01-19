@@ -1,11 +1,41 @@
-.adminNav{
+.adminNav {
     width: 100%;
     margin: auto;
     background-color: pink;
 }
-.adminNav ul { 
+
+.adminNav ul {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
+}
+
+.profileDetails {
+    width: 500px;
+    margin: auto;
+}
+
+.profileDetails h1 {
+    font-size: 25px;
+}
+
+.profileDetails input {
+    width: fit-content;
+}
+
+#profilepicture {
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+}
+
+
+
+
+/* Password Varify */
+
+#passwordinput,
+#opcbtnSubmit {
+    display: none;
 }

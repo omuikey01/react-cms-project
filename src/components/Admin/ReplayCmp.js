@@ -16,27 +16,27 @@ let ReplayCmp = () => {
         })
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         loadData()
     }, []);
 
 
-    let datapost=()=>{
+    let datapost = () => {
         let date = new Date()
-        let newDate = date.getDate() + " " + date.getMonth()+1 + " " + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes();
-        
+        let newDate = date.getDate() + " " + date.getMonth() + 1 + " " + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes();
+
         let url = `http://localhost:4000/Complaints/${id}`
         axios.put(url, {
-            "subject" : userQuery.subject,
-            "datetime" : userQuery.datetime,
-            "queryexplain" : userQuery.queryexplain,
-            "ans" : reply,
-            "replydata" : newDate,
-            "stuid" : userQuery.stuid
-        }).then((res)=>{
+            "subject": userQuery.subject,
+            "datetime": userQuery.datetime,
+            "queryexplain": userQuery.queryexplain,
+            "ans": reply,
+            "replydata": newDate,
+            "stuid": userQuery.stuid
+        }).then((res) => {
             myNav("/admindash")
         })
-        
+
     }
     return (
         <>
@@ -49,12 +49,9 @@ let ReplayCmp = () => {
                 <label> Date of Complaint  </label>
                 <input type="text" value={userQuery.datetime} name="query" />
                 <label> Reply </label>
-                <textarea type="text" cols="100" rows="5"value={reply} onChange={(e)=>{setReply(e.target.value)}} />
-
+                <textarea type="text" cols="100" rows="5" value={reply} onChange={(e) => { setReply(e.target.value) }} />
                 <button onClick={datapost} > Submit </button>
-
             </div>
-
         </>
     )
 }

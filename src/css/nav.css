@@ -10,6 +10,7 @@ nav {
     margin: auto;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 50px;
 }
 
 .nav_content {

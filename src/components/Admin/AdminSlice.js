@@ -1,7 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
-
 let AdminSlice = createSlice({
     name: "AdminSlice",
     initialState: {

@@ -26,7 +26,6 @@ let Main = () => {
                 myDispatch(adminLogin(name))
                 myNav("/admindash")
             })
-
         }
         else {
             let info = {}
@@ -44,12 +43,11 @@ let Main = () => {
                         myNav("/studash")
                     }
                     else {
-                        alert("Password not match")
+                        alert("Password not match *************")
                     }
                 }
                 else {
                     alert("Email Not Match ")
-
                 }
             })
         }

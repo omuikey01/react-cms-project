@@ -1,20 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import './css/style.css'
-import './css/nav.css'
-import './css/main.css'
-import './css/form.css'
-import './css/heading.css'
-import './css/footer.css'
-import './css/register.css'
-import './css/login.css'
-import './css/Studash.css'
-import './css/loader.css'
-import './css/StuCpmForm.css'
-import './css/Admincss/profile.css'
-import './css/Admincss/style.css'
-
+import './CssFiles'
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store } from './Store';

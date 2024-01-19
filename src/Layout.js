@@ -12,18 +12,15 @@ let Layout = () => {
                 <Nav />
             </section>
 
+            {/* Main Component */}
             <section className="mainpage">
                 <Outlet />
             </section>
-
 
             {/* Footer Component */}
             <section className="footer flex" >
                 <Footer />
             </section>
-
-
-
         </>
     )
 }

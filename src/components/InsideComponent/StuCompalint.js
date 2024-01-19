@@ -3,8 +3,6 @@ import { useState } from "react"
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
 
-
-
 let StuCompalint = () => {
     let [userSub, setUserSub] = useState("")
     let [userCpm, setUserCpm] = useState("")
@@ -16,10 +14,11 @@ let StuCompalint = () => {
 
     let submitDandle = (e) => {
         e.preventDefault()
-        let currentData = date.getDate() + " " + date.getMonth()+1 + " " + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes()
+        let currentData = date.getDate() + " " + date.getMonth() + 1 + " " + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes()
+
         let url = ' http://localhost:4000/Complaints';
-        axios.post(url, { "stuid": stuId, "subject": userSub, "datetime": currentData, "queryexplain": userCpm, "ans": "" }).then((res)=>{
-            myNav("/studash")
+        axios.post(url, { "stuid": stuId, "subject": userSub, "datetime": currentData, "queryexplain": userCpm, "ans": "" }).then((res) => {
+            myNav("/studash/laststucpm")
         })
     }
     return (
@@ -32,9 +31,8 @@ let StuCompalint = () => {
                 <textarea name="stucpmmsg" type="text" value={userCpm} onChange={(e) => { setUserCpm(e.target.value) }} />
 
                 <button type="submit" onClick={submitDandle} > Submit </button>
-                <button type="reset"> Reset </button>
+                <button type="reset" > Reset </button>
             </div>
-
         </>
     )
 }

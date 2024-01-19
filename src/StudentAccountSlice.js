@@ -1,62 +1,28 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 let initialState = {
-    stuName : "",
-    stuId : "",
-    stuAuth : false
+    stuName: "",
+    stuId: "",
+    stuAuth: false
 }
 
 let StudentAccountSlice = createSlice({
     name: "StudentAccountManage",
-    initialState : initialState,
-    reducers : 
+    initialState: initialState,
+    reducers:
     {
-        Login : (state, {payload})=>{
+        Login: (state, { payload }) => {
             state.stuName = payload.name
             state.stuId = payload.idd
             state.stuAuth = true
         },
-        Logout : (state)=>{
+        Logout: (state) => {
             state.stuName = ""
             state.stuId = ""
             state.stuAuth = false
         }
-
     }
 })
 
-
 export default StudentAccountSlice.reducer
-export let {Login, Logout} = StudentAccountSlice.actions
-
-
-
-
-
-
-
-
-
-// // authSlice.js
-// const initialState = {
-//   isAuthenticated: false,
-//   user: null,
-// };
-
-// const authSlice = createSlice({
-//   name: 'auth',
-//   initialState,
-//   reducers: {
-//     login: (state, action) => {
-//       state.isAuthenticated = true;
-//       state.user = action.payload;
-//     },
-//     logout: (state) => {
-//       state.isAuthenticated = false;
-//       state.user = null;
-//     },
-//   },
-// });
-
-// export const { login, logout } = authSlice.actions;
-// export default authSlice.reducer;
+export let { Login, Logout } = StudentAccountSlice.actions

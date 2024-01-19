@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 
-
-
 let Nav = () => {
+
+
     return (
         <>
             <section>
@@ -14,7 +14,7 @@ let Nav = () => {
                         COMPLAINT SYSTEM
                     </div>
                     <div>
-                        <Link to="register"> <button> Registration  </button> </Link>
+                       
                     </div>
                 </nav>
             </section>

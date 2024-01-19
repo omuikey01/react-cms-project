@@ -13,17 +13,16 @@ let Registration = () => {
         setRegidata({ ...regidata, [name]: value })
     }
 
-
     let DataSave = (e) => {
         e.preventDefault()
         let data = {
-            "fullname" : regidata.fullname,
-            "city" : regidata.city,
-            "contact" : regidata.contact,
-            "dropdown" : regidata.dropdown,
-            "gender" : regidata.gender,
-            "email" : regidata.email,
-            "password" : regidata.password,
+            "fullname": regidata.fullname,
+            "city": regidata.city,
+            "contact": regidata.contact,
+            "dropdown": regidata.dropdown,
+            "gender": regidata.gender,
+            "email": regidata.email,
+            "password": regidata.password,
         }
         let url = 'http://localhost:4000/Register'
         axios.post(url, data).then((res) => {
@@ -42,8 +41,6 @@ let Registration = () => {
                 <label> Contact </label>
                 <input type="tel" name="contact" value={regidata.contact} onChange={registerdata} />
 
-
-
                 <label > As a </label >
                 <select name="dropdown" onChange={registerdata} required>
                     <option value="nodata" select> Select </option>
@@ -56,7 +53,6 @@ let Registration = () => {
                 <input style={{ "width": "30px" }} type="radio" value="male" name="gender" onChange={registerdata} /> Male
                 <input style={{ "width": "30px" }} type="radio" value="female" name="gender" onChange={registerdata} /> Female
                 <br />
-
 
                 <label> Email </label>
                 <input type="email" name="email" value={regidata.email} onChange={registerdata} />

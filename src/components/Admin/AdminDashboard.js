@@ -7,7 +7,6 @@ let AdminDashboard = () => {
     let myDispatch = useDispatch()
     let myNav = useNavigate()
 
-
     let callmeout = () => {
         myDispatch(adminLogout())
         myNav("/")
@@ -27,12 +26,8 @@ let AdminDashboard = () => {
                 </ul>
             </nav>
             <section className="showlQueryes" >
-
                 <Outlet />
-
             </section>
         </>
-    )
-}
-
+    )}
 export default AdminDashboard

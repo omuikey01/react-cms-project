@@ -11,14 +11,11 @@ let persistConfig = {
 let StudentpersistedReducer = persistReducer(persistConfig, StudentReducer)
 let adminpersistedReducer = persistReducer(persistConfig, AdminReducer)
 
-
 export let store = configureStore({
     reducer:
     {
-        "Student" : StudentpersistedReducer,
-        "Admin" : adminpersistedReducer
-    } 
-    // StudentAccountManage : StudentReducer
+        "Student": StudentpersistedReducer,
+        "Admin": adminpersistedReducer
+    }
 })
-// export default store
 export let persistor = persistStore(store)

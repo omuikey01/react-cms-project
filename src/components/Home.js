@@ -11,8 +11,8 @@ import AdminProfile from "./Admin/AdminProfile"
 import AllQuery from "./Admin/AllQuery"
 import SolvedQuery from "./Admin/SolvedQuery"
 import ReplayCmp from "./Admin/ReplayCmp"
-
-
+import StuProfileEdit from "./InsideComponent/StuProfileEdit"
+import Stupasschange from "./InsideComponent/StuChangePassword"
 
 let Home = () => {
     return (
@@ -29,6 +29,8 @@ let Home = () => {
                             <Route path="camplaint" element={<StuCompalint />} />
                             <Route path="laststucpm" element={<LastStuComplaint />} />
                             <Route path="stuprofile" element={<StuProfile />} />
+                            <Route path="stuEdit/:id" element={<StuProfileEdit />} />
+                            <Route path="stupasschange/:passnum" element={<Stupasschange />} />
                         </Route>
                         <Route path="admindash" element={<AdminDashboard />} >
                             <Route index element={<AdminProfile />} />
