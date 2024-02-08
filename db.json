@@ -12,27 +12,13 @@
     },
     {
       "fullname": "Manoj Aahake",
-      "city": "Nagpur ",
+      "city": "Pandurna",
       "contact": "9325709273",
       "dropdown": "student",
       "gender": "male ",
       "email": "manoj@gmail.com",
       "password": "manoj",
       "id": 2
-    },
-    {
-      "fullname": "Ankushb",
-      "id": 3
-    },
-    {
-      "fullname": "Akash Murkheh",
-      "city": "Bhopal",
-      "contact": "4545567444",
-      "dropdown": "student",
-      "gender": "male",
-      "email": "akash@gmail.com",
-      "password": "akash",
-      "id": 4
     }
   ],
   "Complaints": [
@@ -93,6 +79,41 @@
       "replydata": "19 01 2024 15:43",
       "stuid": 4,
       "id": 7
+    },
+    {
+      "subject": "Internet Issues",
+      "datetime": "31 01 2024 23:29",
+      "queryexplain": "Sir In 4th floor there are Internet Issues. Please Solve it.",
+      "ans": "Yeas. Sir we are working on it. so it will time",
+      "replydata": "31 01 2024 23:32",
+      "stuid": 5,
+      "id": 8
+    },
+    {
+      "subject": "Light Is Giving Issue",
+      "datetime": "31 01 2024 23:36",
+      "queryexplain": "Sir please solve this issue....",
+      "ans": "Yeah, we are working on it",
+      "replydata": "31 01 2024 23:38",
+      "stuid": 6,
+      "id": 9
+    },
+    {
+      "stuid": 6,
+      "subject": "Thank You",
+      "datetime": "31 01 2024 23:39",
+      "queryexplain": "",
+      "ans": "",
+      "id": 10
+    },
+    {
+      "subject": "Electical Issue",
+      "datetime": "5 11 2024 22:59",
+      "queryexplain": "From last 15 days electri is not availble",
+      "ans": "We are working on it",
+      "replydata": "5 11 2024 23:2",
+      "stuid": 7,
+      "id": 11
     }
   ],
   "adminuser": [

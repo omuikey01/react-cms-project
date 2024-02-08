@@ -8,6 +8,7 @@ import { adminLogin } from './Admin/AdminSlice'
 
 let Main = () => {
     let [loginData, setLoginData] = useState({})
+    let [django, setDjango] = useState([])
     let myDispatch = useDispatch()
     let myNav = useNavigate()
 
@@ -31,27 +32,37 @@ let Main = () => {
             let info = {}
 
             e.preventDefault()
-            let url = `http://localhost:4000/Register?email=${loginData.loginid}`
+            // let url = `http://localhost:4000/Register?email=${loginData.loginid}`
+            // axios.get(url).then((res) => {
+            //     if (res.data.length === 1) {
+            //         if (res.data[0].password === loginData.loginpass) {
+            //             info = {
+            //                 "name": res.data[0].fullname,
+            //                 "idd": res.data[0].id
+            //             }
+            //             myDispatch(Login(info))
+            //             myNav("/studash")
+            //         }
+            //         else {
+            //             alert("Password not match *************")
+            //         }
+            //     }
+            //     else {
+            //         alert("Email Not Match ")
+            //     }
+            // })
+
+
+            let url = 'http://localhost:8000/student/user/'
             axios.get(url).then((res) => {
-                if (res.data.length === 1) {
-                    if (res.data[0].password === loginData.loginpass) {
-                        info = {
-                            "name": res.data[0].fullname,
-                            "idd": res.data[0].id
-                        }
-                        myDispatch(Login(info))
-                        myNav("/studash")
-                    }
-                    else {
-                        alert("Password not match *************")
-                    }
-                }
-                else {
-                    alert("Email Not Match ")
-                }
+                setDjango(res.data)
+                if(django.email == loginData.)
             })
+
+
         }
     }
+    console.log(django)
     return (
         <>
             <section>

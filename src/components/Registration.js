@@ -24,11 +24,29 @@ let Registration = () => {
             "email": regidata.email,
             "password": regidata.password,
         }
-        let url = 'http://localhost:4000/Register'
+        let url = 'http://localhost:8000/student/user/'
         axios.post(url, data).then((res) => {
             myNav("/")
         })
     }
+
+
+    // let DataSave = (e) => {
+    //     e.preventDefault()
+    //     let url = 'http://localhost:8000/student/user/'
+
+    //     axios.post(url, {
+    //         "fullname": regidata.fullname,
+    //         "city": regidata.city,
+    //         "contact": regidata.contact,
+    //         "dropdown": regidata.dropdown,
+    //         "gender": regidata.gender,
+    //         "email": regidata.email,
+    //         "password": regidata.password,
+    //     }).then((res) => {
+    //         myNav("/")
+    //     })
+    // }
 
     return (
         <>
