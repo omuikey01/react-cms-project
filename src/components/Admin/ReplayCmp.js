@@ -8,10 +8,9 @@ let ReplayCmp = () => {
     let [userQuery, setUserQuery] = useState({})
     let [reply, setReply] = useState("")
     let myNav = useNavigate()
-
+    // let url = `http://localhost:8000/student/complaint/comp/${id}`
     let loadData = () => {
-        let url = `http://localhost:4000/Complaints/${id}`
-        axios.get(url).then((res) => {
+        axios.get(`http://localhost:8000/student/complaint/comp/${id}`).then((res) => {
             setUserQuery(res.data)
         })
     }
@@ -25,18 +24,11 @@ let ReplayCmp = () => {
         let date = new Date()
         let newDate = date.getDate() + " " + date.getMonth() + 1 + " " + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes();
 
-        let url = `http://localhost:4000/Complaints/${id}`
-        axios.put(url, {
-            "subject": userQuery.subject,
-            "datetime": userQuery.datetime,
-            "queryexplain": userQuery.queryexplain,
-            "ans": reply,
-            "replydata": newDate,
-            "stuid": userQuery.stuid
-        }).then((res) => {
+        axios.patch(`http://localhost:8000/student/complaint/comp/${id}`, { "ans": reply, "replydata": newDate, }).then((res) => {
+            alert("Successful Reply Ans !!")
             myNav("/admindash")
         })
-
+        
     }
     return (
         <>

@@ -5,7 +5,7 @@ import {useNavigate, useParams } from "react-router-dom"
 let StuProfileEdit = () => {
     let { id } = useParams()
     let [myData, setMyData] = useState({})
-    let url = `http://localhost:4000/Register/${id}`
+    let url = `http://localhost:8000/register/student/${id}`
     let myNav = useNavigate()
 
     let loadData = () => {

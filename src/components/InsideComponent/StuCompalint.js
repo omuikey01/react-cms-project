@@ -16,8 +16,7 @@ let StuCompalint = () => {
         e.preventDefault()
         let currentData = date.getDate() + " " + date.getMonth() + 1 + " " + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes()
 
-        let url = ' http://localhost:4000/Complaints';
-        axios.post(url, { "stuid": stuId, "subject": userSub, "datetime": currentData, "queryexplain": userCpm, "ans": "" }).then((res) => {
+        axios.post("http://localhost:8000/student/complaint/comp/", { "stuid": stuId, "subject": userSub, "datetime": currentData, "queryexplain": userCpm, "ans": "" }).then((res) => {
             myNav("/studash/laststucpm")
         })
     }

@@ -10,7 +10,8 @@ let Stupasschange = () => {
     let [reNewPass, setreNewPass] = useState("")
     let Navigate = useNavigate()
 
-    let url = `http://localhost:4000/Register/${passnum}`;
+    let url = `http://localhost:8000/register/student/${passnum}/`
+
 
     let loadData = () => {
         axios.get(url).then((res) => {
@@ -20,6 +21,9 @@ let Stupasschange = () => {
     useEffect(() => {
         loadData()
     }, [])
+
+
+    console.log(myData)
 
     let oldCheck = () => {
         if (oldPass === myData.password) {

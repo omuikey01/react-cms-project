@@ -5,12 +5,11 @@ import { useSelector } from "react-redux"
 let LastStuComplaint = () => {
     let SrNumber = 0
     let idd = useSelector(state => state.Student.stuId)
-    let [Cmp, setCpm] = useState([])
+    let [cmp, setCpm] = useState([])
+
 
     let LoadData = () => {
-        let url = `http://localhost:4000/Complaints?stuid=${idd}`;
-
-        axios.get(url).then((res) => {
+        axios.get(`http://localhost:8000/student/complaint/comp/`).then((res) => {
             setCpm(res.data)
         })
     }
@@ -19,22 +18,28 @@ let LastStuComplaint = () => {
         LoadData()
     }, [])
 
-    console.log(Cmp)
+    console.log(cmp)
 
-    let ans = Cmp.map((key) => {
-        SrNumber++
-        return (
-            <tr>
-                <td> {SrNumber} </td>
-                <td> {key.queryexplain} </td>
-                <td> {key.datetime} </td>
-                <td> {key.replydata ? key.replydata : "Wait......"} </td>
-                <td> {key.ans ? key.ans : "Wait......"} </td>
-            </tr>
-        )
+
+
+
+
+    let ans = cmp.map((key) => {
+        if (key.stuid == idd) {
+            SrNumber++
+            return (
+                <tr>
+                    <td> {SrNumber} </td>
+                    <td> {key.queryexplain} </td>
+                    <td> {key.datetime} </td>
+                    <td> {key.replydata ? key.replydata : "Wait......"} </td>
+                    <td> {key.ans ? key.ans : "Wait......"} </td>
+                </tr>
+            )
+        }
     })
 
-    if (Cmp.length == 0) {
+    if (cmp.length === 0) {
         return (
             <>
                 <h1> Last Compalints </h1>

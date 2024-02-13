@@ -10,8 +10,8 @@ let StuProfile = () => {
     let [myData, setMyData] = useState("")
 
     let loadData = () => {
-        let url = `http://localhost:4000/Register/${id}`
-        axios.get(url).then((res) => {
+        // let url = `http://localhost:4000/Register/${id}`
+        axios.get(`http://localhost:8000/register/student/${id}/`).then((res) => {
             setMyData(res.data)
         })
     }

@@ -10,8 +10,7 @@ let AdminProfile = () => {
     // let [readOnly, setReadonly] = useState(true)
 
     let loadData = () => {
-        let url = `http://localhost:4000/adminuser/1`
-        axios.get(url).then((response) => {
+        axios.get("http://localhost:8000/super/admin/1/").then((response) => {
             setAdminData(response.data)
 
         })
@@ -36,8 +35,7 @@ let AdminProfile = () => {
                 <input type="text" value={adminData.email} />
                 <label> Your Password  </label>
                 <input type="text" value={adminData.password} id="pass" />
-                {/* <button id="chngepassbtn" type="button" onClick={setReadonly(false)}> Change Password </button> */}
-                {/* {readOnly && <button id="updatepassbtn"> Save Password </button>} */}
+                
             </section >
         </>
     )

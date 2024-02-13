@@ -6,11 +6,11 @@ let SolvedQuery = () => {
     let [Newdata, setNewData] = useState([])
 
     let loadData = () => {
-        let url = `http://localhost:4000/Complaints`;
+        let url = `http://localhost:8000/student/complaint/comp/`;
         axios.get(url).then((res) => {
             setQueryData(res.data)
         })
-        let newurl = `http://localhost:4000/Register`;
+        let newurl = `http://localhost:8000/register/student/`;
         axios.get(newurl).then((res) => {
             setNewData(res.data)
         })

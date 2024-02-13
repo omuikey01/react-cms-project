@@ -24,8 +24,8 @@ let Registration = () => {
             "email": regidata.email,
             "password": regidata.password,
         }
-        let url = 'http://localhost:4000/Register'
-        axios.post(url, data).then((res) => {
+
+        axios.post("http://127.0.0.1:8000/register/student/", data).then((res) => {
             myNav("/")
         })
     }
@@ -69,5 +69,6 @@ let Registration = () => {
         </>
     )
 }
+
 export default Registration
 

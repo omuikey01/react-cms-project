@@ -7,12 +7,12 @@ let AllQuery = () => {
     let [allRegisterData, setAllRegisterData] = useState([])
 
     let loadData = () => {
-        let url = `http://localhost:4000/Complaints`;
+        let url = `http://localhost:8000/student/complaint/comp/`;
         axios.get(url).then((response) => {
             setQuery(response.data)
         })
 
-        url = `http://localhost:4000/Register`
+        url = `http://localhost:8000/register/student/`
         axios.get(url).then((res) => {
             setAllRegisterData(res.data)
         })
@@ -21,8 +21,6 @@ let AllQuery = () => {
     useEffect(() => {
         loadData()
     }, [])
-
-
 
 
     query = [...query].reverse();
